@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nivo-slider/themes/default/default.css">
+    <link rel="stylesheet" href="css/nivo-slider/nivo-slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+    <meta name="theme-color" content="#040457">
+    <meta name="description"
+        content="Web site created to be show the creator's habilities with HTML, CSS and SEO. The layout was make using flexbox to a good responsive layout">
+
+    <title>Teste HTML</title>
+</head>
+
+<body>
+    <header>
+        <section class="telefones-linha">
+            <div class="telefones-container">
+                <p class="telefone">11 1234-1234</p>
+                <p class="telefone">11 1234-1234</p>
+            </div>
+        </section>
+
+        <section class="menu">
+            <img src="img/logo.png" alt="Logo da página" class="menu-logo-img">
+            <nav class="menu-nav">
+                <a href="#" class="menu-nav-item">Home</a>
+                <a href="empresa" class="menu-nav-item">Empresa</a>
+                <a href="clientes" class="menu-nav-item">Clientes</a>
+                <a href="contato" class="menu-nav-item">Contato</a>
+            </nav>
+        </section>
+
+        <section class="slider">
+
+            <div id="slider" class="nivoSlider">
+                <img src="img/894x290/comestico_894x290.jpeg" data-thumb="img/894x290/comestico_894x290.jpeg"
+                    alt="Imagem de cosméticos" title="Lorem ipsum dolor sit amet" data-transition="slideInLeft" />
+                <img src="img/894x290/saude_894x290.jpeg" data-thumb="img/894x290/saude_894x290.jpeg"
+                    alt="Imagem de cuidados com a saúde" title="Lorem ipsum dolor sit amet"
+                    data-transition="slideInLeft" />
+                <img src="img/894x290/tech_894x290.jpeg" data-thumb="img/894x290/tech_894x290.jpeg"
+                    alt="Imagem sobre marketing digital" title="Lorem ipsum dolor sit amet"
+                    data-transition="slideInLeft" />
+            </div>
+
+        </section>
+    </header>
+
+    <main>
+        <section class="principal">
+            <section class="instrucoes">
+                <h1 class="instrucoes-titulo">Teste de HTML e CSS</h1>
+                <p class="instrucoes-texto">Quesitos de avaliação:</p>
+                <ul class="instrucoes-lista">
+                    <li class="lista-item">Organização do código (quanto mais limpo melhor);</li>
+                    <li class="lista-item">Nível de detalhismo (quanto mais identico melhor);</li>
+                    <li class="lista-item">Tempo de desenvolvimento (Seja sincero ao enviar o tempo gasto);</li>
+                </ul>
+                <p class="instrucoes-texto">Boa sorte!</p>
+            </section>
+            <img src="img/325x212/logo_325x212.jpeg" alt="Logo do Grupo Ideal Trends" class="principal-imagem">
+        </section>
+
+        <section class="destaques">
+            <h1 class="destaques-titulo">Boxes de destaque</h1>
+            <div class="card-destaque">
+                <img src="img/face.jpeg" alt="Logo do Facebook" class="destaque-img">
+                <p class="destaque-descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum laudantium
+                </p>
+            </div>
+            <div class="card-destaque">
+                <img src="img/insta.jpeg" alt="Logo do Instagram" class="destaque-img">
+                <p class="destaque-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores</p>
+            </div>
+            <div class="card-destaque">
+                <img src="img/skype.jpeg" alt="Logo do WhatsApp" class="destaque-img">
+                <p class="destaque-descricao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo neque</p>
+            </div>
+            <div class="card-destaque">
+                <img src="img/whats.jpeg" alt="Logo do Fb" class="destaque-img">
+                <p class="destaque-descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sequi
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <nav class="rodape-nav">
+            <a href="#">Home</a>
+            <a href="empresa">Empresa</a>
+            <a href="clientes">Clientes</a>
+            <a href="contato">Contato</a>
+        </nav>
+        <span class="rodape-logo">Rodape</span>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.nivo.slider.pack.js"></script>
+    <script src="js/jquery.nivo.slider.js"></script>
+    <script>
+        $(window).load(function () {
+            $("#slider").nivoSlider();
+            //API
+            /*
+            effect:'random',
+            slices: 15,
+            boxCols: 8,
+            boxRows: 4,
+            animSpeed: 500,
+            pauseTime: 3000,
+            startSlide: 0,
+            directionNav:true,
+            controlNav:true,
+            controlNavThumbs:false,
+            pauseOnHover:true,
+            manualAdvance:false,
+            prevText:'Prev',
+            nextText:'Next',
+            randomStart:false,
+            beforeChange:function(){},
+            afterChange:function(){},
+            slideshowEnd:function(){},
+            lastSlide:function(){},
+            afterLoad:function(){}
+        });
+        */
+        });
+    </script>
+</body>
+
+</html>

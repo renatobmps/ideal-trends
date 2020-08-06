@@ -1,0 +1,29 @@
+
+.rodape{
+
+    color: var(--white);
+    background-color: var(--gray-dark);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape a{
+
+    color: var(--white);
+    text-decoration-line: none;
+    margin: 0 .5em;
+}
+
+.rodape .rodape-nav{
+
+    margin: 1em;
+}
+
+.rodape .rodape-logo{
+
+    font-weight: 900;
+    padding: 1.5em;
+}
