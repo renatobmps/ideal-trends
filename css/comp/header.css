@@ -29,6 +29,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    max-width: 894px;
+    margin: 0 auto;
 }
 
 .menu * {
@@ -105,6 +107,13 @@
     z-index: 100;
 }
 
+.submenu-2{
+
+    position: absolute;
+    right: -79%;
+    top: 75%;
+}
+
 .submenu-item a, .submenu-item button {
     
     font-size: .8em;
@@ -128,7 +137,9 @@
 
 .submenu-item a:hover{
     
-    font-size: .9em !important;
+    color: var(--gray-dark);
+    overflow-x: scroll;
+    transition: all .5s;
 }
 
 .dropdown-empresa:hover .submenu-1, .dropdown-item:hover .submenu-2 {
@@ -144,11 +155,6 @@
 .dropdown-empresa:hover .dropbtn-empresa{
     
     font-size: 1.2em;
-}
-
-.dropdown-item:hover .dropbtn-item {
-
-    font-size: .9em;
 }
 
 /*Slider*/
@@ -199,5 +205,11 @@
     .menu .menu-logo-img{
 
         width: 100% !important;
+    }
+
+    .submenu-2{
+
+        top: inherit;
+        right: 0;
     }
 }
