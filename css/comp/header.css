@@ -1,5 +1,6 @@
+/*Telefones*/
 .telefones-linha{
-
+    
     background-color: var(--blue);
     color: var(--white);
     display: flex;
@@ -7,7 +8,7 @@
 }
 
 .telefones-container{
-
+    
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -16,59 +17,152 @@
 }
 
 .telefone{
-
+    
     margin: 0 .5em;
 }
 
+/*Menu*/
+
 .menu{
+    
+    background-color: var(--white);
     display: flex;
-    align-items: flex-end;
     justify-content: space-between;
-    max-width: 894px;
-    margin: 0 auto;
+    align-items: flex-end;
 }
 
-.menu .menu-logo-img{
+.menu * {
+    
+    text-transform: uppercase;
+    text-decoration: none;
+}
 
+/*logo do menu*/
+.menu .menu-logo-img{
+    
     background-color: var(--blue);
     padding: .5em;
     margin: .5em;
     width: 20vw;
     box-sizing: border-box;
     max-width: 155px;
+    align-self: center;
 }
 
+/*itens do menu*/
 .menu .menu-nav{
-
+    
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
 }
 
-.menu .menu-nav-item{
+.menu-nav .menu-nav-item{
 
-    text-transform: uppercase;
+    margin: 0 1em;
+}
+
+.menu-nav .menu-nav-item *{
+    
     color: var(--gray-light);
-    text-decoration-line: none;
-    margin: 0 .5em;
+    transition: transform .5s;
+}
+
+.menu-nav .menu-nav-item > a:hover, .menu-nav .menu-nav-item > button:hover{
+    
+    color: var(--gray-dark);
+    font-size: 1.2em;
+    transition: all .5s;
+}
+
+.menu-nav li{
+    
+    list-style-type: none;
+}
+
+.dropdown{
+
+    width: max-content;
+    vertical-align: middle;
+}
+
+.dropdown::after{
+
+    content: "▾";
+    color: var(--gray);
+    transform: rotate(90deg);
+}
+
+/*Submenu*/
+
+.submenu-1, .submenu-2 {
+    display: none;
+    position: absolute;
+    background-color: var(--blue);
+    width: max-content;
+    z-index: 100;
+}
+
+.submenu-item a, .submenu-item button {
+    
+    font-size: .8em;
+    background-color: transparent;
+    border: 0;
+}
+
+.submenu-item{
+    
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+    color: var(--white) !important;
+    border-top: 3px dotted var(--gray-dark);
+}
+
+.submenu-item:first-child{
+    
+    border-top: 0;
+}
+
+.submenu-item a:hover{
+    
+    font-size: .9em !important;
+}
+
+.dropdown-empresa:hover .submenu-1, .dropdown-item:hover .submenu-2 {
+    display: block;
+}
+
+.dropdown-empresa:hover .dropbtn-empresa, .dropdown-item:hover .dropbtn-item {
+    
+    color: var(--gray-dark);
+    transition: all .5s;
+}
+
+.dropdown-empresa:hover .dropbtn-empresa{
+    
+    font-size: 1.2em;
+}
+
+.dropdown-item:hover .dropbtn-item {
+
+    font-size: .9em;
 }
 
 /*Slider*/
 .slider{
-
+    
     background-color: var(--gray-light);
     display: flex;
 }
 
 .slider img, .slider .nivoSlider{
-
+    
     max-width: 894px;
     margin: 0 auto;
     width: 100%;
 }
 
 .nivo-prevNav, .nivo-nextNav{
-
+    
     background: url(../../img/arrows.png) 0 0 no-repeat;
     color: transparent;
     font-size: 2em;
@@ -76,26 +170,16 @@
 }
 
 .nivo-prevNav{
-
+    
     background-position: 0 0;
 }
 
 .nivo-nextNav{
-
+    
     background-position: -30px 0;
 }
 
 .nivo-controlNav{
-
+    
     display: none;
 }
-
-/*
-@media (min-width: 500px){
-
-    body{
-
-        
-    }
-}
-*/

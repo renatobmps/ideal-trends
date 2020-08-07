@@ -7,7 +7,7 @@ main{
     box-sizing: border-box;
 }
 
-/*Teste de HTML e CSS*/
+/*Instruções*/
 .principal{
 
     display: flex;
@@ -70,6 +70,26 @@ main{
 .destaques .destaque-img{
 
     width: 100%;
+    color: transparent;
+    background: url(../../img/redes-sociais.jpeg);
+    height: 163px;
+    width: 196px;
+}
+
+.destaques .img-facebook{
+    background-position: 0 0;
+}
+
+.destaques .img-instagram{
+    background-position: 588px 0;
+}
+
+.destaques .img-skype{
+    background-position: 392px 0;
+}
+
+.destaques .img-whatsapp{
+    background-position: 196px 0;
 }
 
 .destaques .destaque-descricao{
